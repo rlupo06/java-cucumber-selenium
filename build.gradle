@@ -25,7 +25,7 @@ task runTests(type: Test, dependsOn: testClasses) {
 }
 
 dependencies() {
-    testCompile 'io.github.prashant-ramcharan:courgette-jvm:2.2.1'
+    testCompile 'io.github.prashant-ramcharan:courgette-jvm:2.4.0'
 
     testCompile(group: 'io.cucumber', name: 'cucumber-java', version: '2.4.0')
 
