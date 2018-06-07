@@ -1,0 +1,30 @@
+
+
+{
+  "capabilities":
+  [
+    {
+      "browserName": "safari",
+      "technologyPreview": false,
+      "platform": "MAC",
+      "maxInstances": 1,
+      "seleniumProtocol": "WebDriver"
+    }
+  ],
+  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+  "maxSession": 1,
+  "port": 5555,
+  "register": true,
+  "registerCycle": 5000,
+  "hub": "http://qa-docker02.avirat.net:4449",
+  "nodeStatusCheckTimeout": 5000,
+  "nodePolling": 5000,
+  "role": "node",
+  "host":"10.57.85.10",
+  "unregisterIfStillDownAfter": 60000,
+  "downPollingLimit": 2,
+  "debug": false,
+  "servlets" : [],
+  "withoutServlets": [],
+  "custom": {}
+}

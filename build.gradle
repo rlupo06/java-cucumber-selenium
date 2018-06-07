@@ -1,0 +1,43 @@
+apply(plugin: 'java')
+apply(plugin: 'idea')
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}
+
+repositories() {
+    mavenCentral()
+    jcenter()
+}
+
+configurations() {
+    cucumberRuntime {
+        extendsFrom(testRuntime)
+    }
+}
+
+task runTests(type: Test, dependsOn: testClasses) {
+    systemProperties(System.properties as Map<String, ?>)
+
+    include '**/TestRunner.class'
+
+    outputs.upToDateWhen { false }
+}
+
+dependencies() {
+    testCompile 'io.github.prashant-ramcharan:courgette-jvm:2.2.1'
+
+    testCompile(group: 'io.cucumber', name: 'cucumber-java', version: '2.4.0')
+
+    testCompile(group: 'io.cucumber', name: 'cucumber-junit', version: '2.4.0')
+
+    testCompile(group: 'io.cucumber', name: 'cucumber-jvm', version: '2.4.0')
+
+    compile(group: 'junit', name: 'junit', version: '4.12')
+
+    compile(group: 'io.cucumber', name: 'cucumber-picocontainer', version: '2.4.0')
+
+    compile(group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.11.0')
+
+    compile(group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.11.0')
+}

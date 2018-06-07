@@ -1,0 +1,59 @@
+{
+  "chrome": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": [
+        "--window-size=1920,1080"]
+    }
+  },
+  "firefox": {
+    "browserName": "firefox"
+  },
+  "414px": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": [
+        "--window-size=414,736",
+        "--user-agent=Mozilla/5.0 (Android 4.4; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0"
+      ]
+    }
+  },
+  "736px": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": [
+        "--window-size=736,414",
+        "--user-agent=Mozilla/5.0 (Android 4.4; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0"
+      ]
+    }
+  },
+  "768px": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": [
+        "--window-size=768,1024",
+        "--user-agent=Mozilla/5.0 (Android 4.4; Tablet; rv:41.0) Gecko/41.0 Firefox/41.0"
+      ]
+    }
+  },
+  "1024px": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": [
+        "--window-size=1024,768",
+        "--user-agent=Mozilla/5.0 (Android 4.4; Tablet; rv:41.0) Gecko/41.0 Firefox/41.0"
+      ]
+    }
+  },
+  "safari": {
+    "browserName": "safari"
+  },
+  "IE": {
+    "browserName": "internet explorer",
+    "platformName": "desktop"
+  },
+  "Edge": {
+    "browserName": "edge",
+    "platformName": "desktop"
+  }
+}
